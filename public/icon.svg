@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Custom SVG icon for an electronics repair website -->
+<svg 
+  xmlns="http://www.w3.org/2000/svg"
+  width="64" 
+  height="64" 
+  viewBox="0 0 64 64" 
+  fill="none"
+>
+  <!-- Dark background circle for a clean base -->
+  <circle cx="32" cy="32" r="31" fill="#1a1a1a" stroke="#444" stroke-width="2" />
+
+  <!-- Gear shape -->
+  <!-- The gear is built using a circle and repeated rectangles for teeth -->
+  <g transform="translate(32 32)">
+    <!-- Base gear circle -->
+    <circle r="12" fill="#0070f3" />
+    <!-- Gear teeth: rotated rectangles -->
+    <g fill="#0070f3">
+      <!-- We'll create 8 teeth evenly spaced -->
+      <rect x="-2" y="-18" width="4" height="6" />
+      <rect x="-2" y="12" width="4" height="6" transform="rotate(180)" />
+      <rect x="12" y="-2" width="6" height="4" transform="rotate(90)" />
+      <rect x="-18" y="-2" width="6" height="4" transform="rotate(270)" />
+      <!-- Diagonal teeth -->
+      <rect x="8.5" y="-15" width="4" height="6" transform="rotate(45)" />
+      <rect x="-8.5" y="-15" width="4" height="6" transform="rotate(-45)" />
+      <rect x="8.5" y="9" width="4" height="6" transform="rotate(135)" />
+      <rect x="-8.5" y="9" width="4" height="6" transform="rotate(-135)" />
+    </g>
+  </g>
+
+  <!-- Wrench overlay -->
+  <!-- A simple path representing a stylized wrench crossing the gear -->
+  <path 
+    d="M20 44 L44 20
+       M24 48 L48 24"
+    stroke="#e63946" 
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Business name text inside the circle -->
+  <!-- <text 
+    x="32" 
+    y="58"
+    text-anchor="middle"
+    font-family="Arial, sans-serif" 
+    font-size="8" 
+    fill="#f0f0f0"
+  >
+    5GuysTech
+  </text> -->
+</svg>
