@@ -17,12 +17,14 @@ const staggerContainer = {
 export default function Home() {
   return (
     <div className="pt-12">
+      {/* HERO */}
       <section className="relative bg-gray-900 text-white">
         <div className="absolute inset-0">
           <Image
             src="/images/hero.jpeg"
             alt="Tech repair"
-            className="w-full h-full object-cover opacity-50"
+            fill
+            className="object-cover opacity-50"
           />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 text-center">
@@ -58,6 +60,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ABOUT */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -66,11 +69,14 @@ export default function Home() {
         className="py-20 px-6 md:px-16 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
       >
         <motion.div variants={fadeInUp}>
-          <Image
-            src="/images/about.jpeg"
-            alt="About us"
-            className="w-full rounded-lg shadow-md"
-          />
+          <div className="relative w-full aspect-[4/3] rounded-lg shadow-md overflow-hidden">
+            <Image
+              src="/images/about.jpeg"
+              alt="About us"
+              fill
+              className="object-cover"
+            />
+          </div>
         </motion.div>
 
         <motion.div variants={fadeInUp}>
@@ -87,6 +93,7 @@ export default function Home() {
         </motion.div>
       </motion.section>
 
+      {/* WHY CHOOSE US */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -125,6 +132,7 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/* SERVICES */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -149,12 +157,14 @@ export default function Home() {
               variants={fadeInUp}
               className="bg-white dark:bg-gray-800 rounded-xl shadow overflow-hidden hover:shadow-lg transition"
             >
-              <Image
-                src={service.image}
-                alt={service.title}
-                className="h-48 w-full object-cover"
-              />
-
+              <div className="relative w-full h-48">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div className="p-4">
                 <h3 className="font-semibold">{service.title}</h3>
               </div>
@@ -173,6 +183,7 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/* CTA */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
