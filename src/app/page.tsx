@@ -17,7 +17,6 @@ const staggerContainer = {
 export default function Home() {
   return (
     <div className="pt-12">
-      {/* HERO */}
       <section className="relative bg-gray-900 text-white">
         <div className="absolute inset-0">
           <Image
@@ -60,7 +59,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABOUT */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -93,7 +91,6 @@ export default function Home() {
         </motion.div>
       </motion.section>
 
-      {/* WHY CHOOSE US */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -132,7 +129,6 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* SERVICES */}
       <motion.section
         variants={staggerContainer}
         initial="hidden"
@@ -183,7 +179,6 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* CTA */}
       <motion.section
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
